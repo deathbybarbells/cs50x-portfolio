@@ -1,0 +1,114 @@
+<?php
+<!--
+    This PHP session initialization and access control code was developed
+    with guidance from ChatGPT. ChatGPT provided insight on how to restrict
+    access to logged-in users by using sessions.
+-->
+session_start();
+if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
+    header("Location: signup.html");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Program - Fitness 4:13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/logo.jpg" alt="Fitness 4:13 Logo">
+                    <span class="logo-text">Fitness</span><span class="logo-413">4:13</span>
+                </a>
+            </div>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="beginner.html">Beginner Program</a>
+                    <a href="intermediate.html">Intermediate Program</a>
+                    <a href="advanced.html">Advanced Program</a>
+                    <a href="elite.html">Elite Program</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <section class="section">
+            <h2>Beginner Program</h2>
+            <p>Welcome to the beginner program! Below are your exercises and instructions to get started.</p>
+
+            <div class="exercise">
+                <h3>Exercise 1: Skullcrushers</h3>
+                <video controls>
+                    <source src="media/skullcrushers.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Lay flat on your back on a bench. Use an ez bar with a narrow grip. Keep elbows pointed to ceiling. Start with bar above forehead and press vertically with elbows in a fixed position. Control the eccentric letting tricep stretch until bar reaches forehead.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 2: Cable Curls</h3>
+                <video controls>
+                    <source src="media/cablecurls.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Use an ez bar with a medium width grip. Keep elbows to the side of your torso and use strict movements, just bending at the elbow to curl the bar up towards your chest. Control the eccentric letting the bicep stretch to the bottom.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 3: Dumbbell Crossbody Curls</h3>
+                <video controls>
+                    <source src="media/DBCrossbodyCurls.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Start by holding a dumbbell in each hand at your side, bending at the elbow, curl the dumbbell in the middle of your chest and lower the weight back to your side with control.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 4: "Drive the Bus" Superset with Front Raises</h3>
+                <video controls>
+                    <source src="media/DrivethebusintoFrontRaises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Start by holding a plate out in front of you parallel to your shoulders and the ground. Turn the plate side to side as if you're turning a steering wheel back and forth until fatigued. Superset this movement with front raises by raising the weight from the rested bottom position back to the parallel to shoulder position at the top until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 5: Inverted Rows</h3>
+                <video controls>
+                    <source src="media/InvertedRows.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Position bar at an incline that you can comfortably keep body flat and core engaged while holding the bar outside shoulder width, lower yourself until arms are fully extended and then pull your chest toward the bar. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 1: Hammer Strength Incline Chest Press</h3>
+                <video controls>
+                    <source src="media/HSInclineChestPress.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Position seat so that the top of your chest is even with the handles. Space hands evenly on each handle. Keeping your shoulder blades on the back rest, press the weight out in front of you then control back down to your chest. Repeat until failure.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Fitness 4:13. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

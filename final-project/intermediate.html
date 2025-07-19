@@ -1,0 +1,109 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_logged_in']) || $_SESSION['user_logged_in'] !== true) {
+    header("Location: signup.html");
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate Program - Fitness 4:13</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="media/logo.jpg" alt="Fitness 4:13 Logo">
+                    <span class="logo-text">Fitness</span><span class="logo-413">4:13</span>
+                </a>
+            </div>
+            <nav>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="beginner.html">Beginner Program</a>
+                    <a href="intermediate.html">Intermediate Program</a>
+                    <a href="advanced.html">Advanced Program</a>
+                    <a href="elite.html">Elite Program</a>
+                    <a href="logout.php">Logout</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <section class="section">
+            <h2>Intermediate Program</h2>
+            <p>Welcome to the intermediate program! Below are your exercises and instructions to progress further.</p>
+
+            <div class="exercise">
+                <h3>Exercise 1: Shoulder Press</h3>
+                <video controls>
+                    <source src="media/shoulderpress.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Sit in shoulder press machine and brace your core once you've positioned your hands spaced evenly on each handle. Press the weight directly above your shoulders and then lower it with control. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 2: Alternating Dumbbell Front Raises</h3>
+                <video controls>
+                    <source src="media/frontraises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Hold a dumbbell in each hand to your sides. Keeping arms straight and elbows locked, raise one arm straight in front of the body until you've raised it just slightly above parallel to the shoulder and then lower it back and alternate each arm. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 3: Dumbbell Lateral Raises</h3>
+                <video controls>
+                    <source src="media/DBLateralRaises.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Hold a dumbbell in each hand to your sides. Keep elbows slightly bent but in a locked position, not letting the elbows sag, raise the dumbbell to your sides laterally until your elbows and hands reach parallel to the shoulder. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 4: Dumbbell Rows</h3>
+                <video controls>
+                    <source src="media/dbrackrows.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Start with a dumbbell on the floor in front of a dumbbell rack. Place one hand on the rack to brace your weight with the other hand on the dumbbell. Position body to be parallel to the floor keeping hips flat and core tight. Pull the dumbbell above your hip and lower back to the floor stretching the lats. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 5: Straight Arm Pressdowns</h3>
+                <video controls>
+                    <source src="media/StraightArmPressdowns.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Using a cable machine and V-Bar attachment, grab handles and walk out 2 small steps from the pulley. Hinge your hips back and keep back flat. Stretch arms to be parallel to your back and then keeping your arms straight and locked press the bar down toward your thighs and then control the weight back to the starting position at the top. Repeat until failure.</p>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercise 6: Seated Cable Row</h3>
+                <video controls>
+                    <source src="media/SeatedCableRow.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Using the seated cable row machine, grab the 2 handles, sit on bench with back flat and core engaged and with chest out, pull weight towards the bottom of your rib cage and squeeze your shoulder blades together then control the weight back to the starting stretched position. Repeat until failure.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Fitness 4:13. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
