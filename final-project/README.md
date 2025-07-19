@@ -170,3 +170,5 @@ Author: Kevin (“deathbybarbells”) – open to feedback & discussion.
 |-------|------|-----|------------|
 | HTML/CSS/PHP/JS | Sessions | `php -S localhost:4130` | DB → Payments → Community |
 END README
+
+**Note:** Workout video library omitted from public version; code & structure only.
